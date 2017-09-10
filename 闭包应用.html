@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//    var o = (function () {
+//        var a = 1;
+//        var b = 42;
+//        return {
+//            foo: function () {
+//                console.log(a + b);
+//                return b;
+//            }
+//        }
+//    })();
+////    Object.__proto__("get",function () {
+////        return this;
+////    });
+//        Object.prototype.__defineGetter__('get', function(){
+//            return this;
+//        });
+//console.log(o.foo());
+</script>
+<script>
+    var o = (function() {
+        var person = {
+            name: 'Vincent',
+            age: 24
+        };
+        return {
+            run: function(k) {
+                return person[k];
+            }
+        }
+    }());
+//    1.
+//    Object.prototype.__defineGetter__('get', function(){
+//        return this;
+//    });  基本被弃用了
+//     2.
+    Object.defineProperty(Object.prototype, 'get', {get: function(){
+        return this;
+    }});
+    console.log(o.run('get'));
+//    http://www.cnblogs.com/mzwr1982/archive/2012/05/20/2509295.html  理解闭包网址
+//    Object.prototype.get = (function () {  //这方法和2.是一样的   2.更好
+//        return{
+//            get:function () {
+//                return this;
+//            }
+//        }
+//    })();
+//    console.log(o.run('get'));
+
+
+    //    3.0
+//    Object.defineProperty(Object.prototype, 'self', {
+//        get: function () {return this;},
+//        set: function (value) {return this},
+//        configurable: true
+//        // 该属性的存在是确保该属性可被delete方法删除
+//    });
+//
+//    var person = o.run('self');
+//    delete Object.prototype.self;
+    //由于不推荐使用prototype来扩展自己定义的属性（扩展标准规定的除外），这里把扩展再去掉。
+
+//    console.log(person);
+</script>
+</body>
+</html>

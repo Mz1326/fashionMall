@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <title>FashionMall</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/jqzoom.css">
+    <link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/jqzoom.pack.1.0.1.js"></script>
+    <script src="scripts/detail.js"></script>
+</head>
+<body>
+<div>
+    <!--头部-->
+    <header class="header">
+
+        <div class="contWidth">
+            <!--Top-->
+            <div class="Mz_top">
+                <a href="#">请登录 /</a>
+                <a href="#">注册 /</a>
+                <a href="#"><span id="gift" class="fa fa-2x fa-gift"></span> 签到有礼 /</a>
+                <a href="#" class="more">个人中心<span class=" fa  fa-caret-down"></span> /
+                    <ul class="secNav">
+                        <i class="fa fa-2x fa-caret-up"></i>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                    </ul>
+                </a>
+                <a href="#" class="more">我的特卖<span class=" fa  fa-caret-down"></span> /
+                    <ul class="secNav">
+                        <i class="fa fa-2x fa-caret-up"></i>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                    </ul>
+                </a>
+                <a href="#" class="more">会员俱乐部<span class=" fa  fa-caret-down"></span> /
+                    <ul class="secNav">
+                        <i class="fa fa-2x fa-caret-up"></i>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                    </ul>
+                </a>
+                <a href="#" class="more">客户服务<span class=" fa  fa-caret-down"></span> /
+                    <ul class="secNav">
+                        <i class="fa fa-2x fa-caret-up"></i>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                    </ul>
+                </a>
+                <a href="#"><span class="fa fa-2x fa-mobile-phone"></span>手机版/</a>
+                <a href="#" class="more">更多<span class=" fa fa-2x fa-caret-down"></span>
+                    <ul class="secNav">
+                        <i class="fa fa-2x fa-caret-up"></i>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                        <li>二级菜单</li>
+                    </ul>
+                </a>
+            </div>
+            <!--logo-->
+            <a href="#nogo" class="logo">
+                <img src="images/logo.svg" alt="MzShop" title="FashionMall">
+            </a>
+            <!--搜索框-->
+            <div class="search">
+                <label>
+                <i class="fa fa-search"></i>
+                <input type="text" class="inputSearch" value="请输入商品关键字"/>
+                </label>
+            </div>
+            <!--皮肤切换-->
+            <ul class="skin">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!--导航菜单-->
+            <div class="mainNav" id="nav">
+                <ul >
+                    <li>
+                        <a href="#">首页</a>
+                        <div class="jnNav">
+                            <div class="subitem">
+                                <span class="fa fa-2x fa-caret-up tringular" ></span>
+                                <a>
+                                    <span>二级菜单</span>
+                                    <span>二级菜单</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">推荐品牌</a>
+                        <div class="jnNav" >
+                            <div class="subitem">
+                                <span class="fa fa-2x fa-caret-up tringular" ></span>
+                                <a>
+                                    <span>二级菜单</span>
+                                    <span>二级菜单</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">女装</a>
+                        <div class="jnNav" >
+                            <div class="subitem">
+                                <span class="fa fa-2x fa-caret-up tringular" ></span>
+                                <a>
+                                    <span>二级菜单</span>
+                                    <span>二级菜单</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">男装</a>
+                        <div class="jnNav" >
+                            <div class="subitem">
+                                <span class="fa fa-2x fa-caret-up tringular" ></span>
+                                <a>
+                                    <span>二级菜单</span>
+                                    <span>二级菜单</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">鞋包配饰</a>
+                        <div class="jnNav" >
+                            <div class="subitem">
+                                <span class="fa fa-2x fa-caret-up tringular" ></span>
+                                <a>
+                                    <span>二级菜单</span>
+                                    <span>二级菜单</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <!--主内容-->
+    <section class="container">
+        <!--侧边框-->
+        <aside class="aside_left">
+            <h2 title="商品分类">商品分类</h2>
+            <div class="cataInfo">
+                <h3>推荐品牌</h3>
+                <ul>
+                    <li>
+                        <span class="fa fa-tint hot"></span>
+                        <a href="#">耐克</a></li>
+                    <li><a href="#">阿迪达斯</a></li>
+                    <li><a href="#">达芙妮</a></li>
+                    <li><a href="#">李宁</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">安踏</a></li>
+                    <li><a href="#">奥康</a></li>
+                    <li><a href="#">啄木鸟</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">杰克琼斯</a></li>
+                </ul>
+                <h3>女装</h3>
+                <ul>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">呢大衣</a></li>
+                    <li><a href="#">T恤</a></li>
+                    <li><a href="#">衬衫</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">针织</a></li>
+                    <li><a href="#">皮外套</a></li>
+                    <li><a href="#">连衣裙</a></li>
+                    <li><a href="#">羊毛衫</a></li>
+                    <li><a href="#">羽绒服</a></li>
+                </ul>
+                <h3>男装</h3>
+                <ul>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">衬衫</a></li>
+                    <li><a href="#">T恤衫</a></li>
+                    <li><a href="#">夹克</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">风衣</a></li>
+                    <li><a href="#">大皮衣</a></li>
+                    <li><a href="#">牛仔裤</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">卫衣</a></li>
+                    <li><a href="#">百搭</a></li>
+                </ul>
+                <h3>鞋包配饰</h3>
+                <ul>
+                    <li><a href="#">围巾</a></li>
+                    <li><span class="fa fa-tint hot"></span>
+                        <a href="#">旅行箱</a></li>
+                    <li><a href="#">真皮包</a></li>
+                    <li><a href="#">达芙妮</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">毛绒</a></li>
+                    <li><a href="#">清仓</a></li>
+                    <li> <span class="fa fa-tint hot"></span>
+                        <a href="#">韩版</a></li>
+                    <li><a href="#">单肩包</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="catalog">
+                <a href="" class="jqzoom" title="人家有点害羞不敢太高清">
+                    <img  alt="" title="我不好"  style="border: 1px solid #666;">
+                    <span class="fa fa-2x fa-search-plus"></span>
+                </a>
+                <div class="smallPic">
+                <p><img src="images/shop1.jpg" alt=""></p>
+                <p><img src="images/shop2.jpg" alt=""></p>
+                <p><img src="images/shop3.jpg" alt=""></p>
+                <p><img src="images/shop4.jpg" alt=""></p>
+                <p><img src="images/shop5.jpg" alt=""></p>
+                <p><img src="images/shop6.jpg" alt=""></p>
+                <p><img src="images/shop7.jpg" alt=""></p>
+                <p><img src="images/shop8.jpg" alt=""></p>
+                </div>
+            </div>
+            <div class="proItem">
+                <div class="appraise">商品评价:</div>
+                <ul class="star">
+                    <li>☆</li>
+                    <li>☆</li>
+                    <li>☆</li>
+                    <li>☆</li>
+                    <li>☆</li>
+                </ul>
+                <div id="showScore"></div>
+            </div>
+            <div class="details">
+                <div class="buyCar">
+                    <h3>高品质韩版女士时尚秋季衬衫</h3>
+                    <p>全新精品高级衬衫再次提升品质，精选100%新疆长城制造而成,
+                        平整度好，褶皱少：80-100高支双股经纬交织，给您带来无与伦比的舒适享受
+                        而且面料反光效果好，具有漂亮的光泽，质感上佳，有利于免烫效果的保持！
+                    </p>
+                    <div class="info">
+                        价&nbsp;&nbsp;格:<s>379.00元</s><br>
+                        促&nbsp;&nbsp;销:<h2>198.00元</h2><br>
+                        颜&nbsp;&nbsp;色:
+                        <b>黑<span></span><i>✔</i></b>
+                        <b>白<span></span><i>✔</i></b>
+                        <b>红<span></span><i>✔</i></b>
+                        <b>灰<span></span><i>✔</i></b><br>
+                        <div class="seColor">
+                            <div>
+                            <span><i>✔</i></span><span><i>✔</i></span><span><i>✔</i></span><span><i>✔</i></span>
+                            </div>
+                        </div>
+                        尺&nbsp;&nbsp;寸:<span class="choose"><i>S</i></span><span class="choose"><i>L</i></span><span class="choose"><i>XL</i></span><span class="choose"><i>XXL</i></span><br>
+                        数&nbsp;&nbsp;量:
+                        <label>
+                        <input type="number" min="1" value="1" placeholder="1">
+                        </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>库存<i id="commNumber">999</i>件</span><br>
+                        总&nbsp;&nbsp;计: <i id="Pay">198</i> 元
+                        <div>
+                            <button id="intoCar" class="fa fa-2x fa-shopping-cart">加入购物车</button>
+                            <button id="nowBuy" class="fa fa-2x fa-flash">立即购买</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--页脚-->
+    <footer class="footer">
+        <h1>MzShop✌</h1>
+
+        <a>关于我们</a>
+        <a >免费邮 </a>
+        <a >官方博客</a>
+        <a >客户服务 </a>
+        <a >隐私政策</a>|
+        <a >MZ设计公司版权所有 © &copy; 2015-2018</a>
+    </footer>
+</div>
+</body>
+</html>

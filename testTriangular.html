@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用css的border属性实现三角</title>
+    <style type="text/css">
+        <!--
+        .box{ width:300px; height:300px; background:#CCC; position:relative;  top:100px;left:100px }
+        .to-top{display:block; overflow:hidden; width:0px; height:0px; border:6px solid #ccc; border-color:#ccc #fff; border-width:0 6px 6px 6px; position:absolute; left:30px; top:0;margin-top:-6px;}
+        .to-right{display:block; overflow:hidden; width:0px; height:0px; border:6px solid #ccc; border-color:#fff #ccc; border-width:6px 0 6px 6px; position:absolute; right:0px; top:30px;margin-right:-6px;}
+        .to-bottom{display:block; overflow:hidden; width:0px; height:0px; border:6px solid #ccc; border-color:#ccc #fff; border-width:6px 6px 0 6px; position:absolute; right:30px; bottom:0;margin-bottom:-6px;}
+        .to-left{display:block; overflow:hidden; width:0px; height:0px; border:6px solid #ccc; border-color:#fff #ccc; border-width:6px 6px 6px 0 ; position:absolute; left:0; bottom:30px;margin-left:-6px;}
+        -->
+    </style>
+</head>
+<body>
+<div class="box"><em class="to-top"></em><em class="to-right"></em><em class="to-bottom"></em><em class="to-left"></em></div>
+
+</body>
+</html>

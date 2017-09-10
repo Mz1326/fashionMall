@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="abc" style="width:200px;height:200px;border:5px solid #E9F47B;">这里是200*200的闪烁框</div>
+<script>
+    var i=0;
+    function shine(id){
+        var obj= document.getElementById(id);
+        if(i==0){
+            obj.style.borderColor="#E9F47B";
+            i=1;
+        }else{
+            obj.style.borderColor="red";
+            i=0
+        }
+    }
+    setInterval("shine('abc')",500);//边框变化时间，100可以根据情况调整大小
+</script>
+</body>
+</html>
